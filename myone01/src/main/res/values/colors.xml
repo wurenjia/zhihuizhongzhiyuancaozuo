@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="text1">#ba081fe4</color>
+    <color name="bg_btn_01">#c53b3bf4</color>
+    <color name="login_text">#ffffff</color>
+    <color name="colorAccent_ra">#c1387aed</color>
+    <color name="dark_bg_text">#efffffff</color>
+    <color name="fragment_title_bg">#8d1d14ef</color>
+    <color name="fragment_title_bg_beuse">#8d110aae</color>
+    <color name="share_btn02_color">#af6691ff</color>
+    <color name="btn_beuse">#91004dff</color>
+    <color name="linechar_linecolor">#e0000000</color>
+    <color name="btn_nobeuse">#3c0044ff</color>
+</resources>

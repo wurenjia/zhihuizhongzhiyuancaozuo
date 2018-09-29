@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_lg"
+    tools:context=".ControlActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <LinearLayout
+        android:id="@+id/nosun_ct_ll_Cont"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginStart="6dp"
+        android:background="#7effffff"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/addmst_cl_ll_Cont"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spirr_ct_ll_Cont">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" 遮阳：                  " />
+
+        <Button
+            android:id="@+id/nosun_open_btn_Cont"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="#00ffffff"
+            android:text="开启" />
+
+        <Button
+            android:id="@+id/nosun_close_btn_Cont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#883672fd"
+            android:text="关闭" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/addmst_cl_ll_Cont"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginStart="6dp"
+        android:background="#7effffff"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/coor_ct_ll_Cont"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nosun_ct_ll_Cont">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" 加湿：                  " />
+
+        <Button
+            android:id="@+id/addmst_open_Cont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00ffffff"
+            android:text="开启" />
+
+        <Button
+            android:id="@+id/addmst_close_Cont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#883672fd"
+            android:text="关闭" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/coor_ct_ll_Cont"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginStart="6dp"
+        android:background="#7effffff"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/heating_ct_ll_Cont"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addmst_cl_ll_Cont">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" 冷气：                  " />
+
+        <Button
+            android:id="@+id/coor_open_btn_Cont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00ffffff"
+            android:text="开启" />
+
+        <Button
+            android:id="@+id/coor_close_btn_Cont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#883672fd"
+            android:text="关闭" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/airin_ct_ll_Cont"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginStart="6dp"
+        android:background="#7effffff"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/airout_ct_ll_Cont"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addlight_ct_Cont">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" 进风" />
+
+        <Button
+            android:id="@+id/airin_open_all_btn_Cont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00ffffff"
+            android:text="全开" />
+
+        <Button
+            android:id="@+id/airin_open_half_btn_Cont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00ffffff"
+            android:text="半开" />
+
+        <Button
+            android:id="@+id/airin_close_btn_Cont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#883672fd"
+            android:text="关闭" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/heating_ct_ll_Cont"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginStart="6dp"
+        android:background="#7effffff"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/addlight_ct_Cont"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coor_ct_ll_Cont">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" 暖气：                  " />
+
+        <Button
+            android:id="@+id/heating_open_btn_Cont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00ffffff"
+            android:text=" 开启" />
+
+        <Button
+            android:id="@+id/heating_close_btn_Cont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#883672fd"
+            android:text="关闭" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/airout_ct_ll_Cont"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginStart="6dp"
+        android:background="#7effffff"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/sendAsk_btn_Cont"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/airin_ct_ll_Cont">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" 排风" />
+
+        <Button
+            android:id="@+id/airout_open_all_btn_Cont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00ffffff"
+            android:text="全开" />
+
+        <Button
+            android:id="@+id/airout_open_half_btn_Cont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00ffffff"
+            android:text="半开" />
+
+        <Button
+            android:id="@+id/airout_close_btn_Cont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#883672fd"
+            android:text="关闭" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/spirr_ct_ll_Cont"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginStart="6dp"
+        android:background="#7effffff"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/nosun_ct_ll_Cont"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" 喷灌：                  " />
+
+        <Button
+            android:id="@+id/spirr_open_btn_Cont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00ffffff"
+            android:text="开启" />
+
+        <Button
+            android:id="@+id/spirr_close_btn_Cont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#883672fd"
+            android:text="关闭" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/addlight_ct_Cont"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginStart="6dp"
+        android:background="#7effffff"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/airin_ct_ll_Cont"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heating_ct_ll_Cont">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" 补光：                  " />
+
+        <Button
+            android:id="@+id/addlight_open_btn_Cont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00ffffff"
+            android:text="开启" />
+
+        <Button
+            android:id="@+id/addlight_close_btn_Cont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#883672fd"
+            android:text="关闭" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sendAsk_btn_Cont"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/shape"
+        android:text="提交"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/airout_ct_ll_Cont" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="0dp"
+        android:layout_height="242dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/spirr_ct_ll_Cont"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/nts_ll_control"
+            android:layout_width="372dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="200dp"
+            android:background="#6698b6fc"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:id="@+id/nts_open_btn_Cont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00ffffff"
+                android:text="开启输送" />
+
+            <Button
+                android:id="@+id/nts_close_btn_Cont"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#88618ef7"
+                android:text="关闭输送" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:text="营养液原料配比"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/title4_jb_control"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="水              "
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/yuanliao2_jd_control" />
+
+        <SeekBar
+            android:id="@+id/yuanliao4_jd_control"
+            android:layout_width="240dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="2dp"
+            android:focusable="true"
+            android:max="10"
+            android:maxHeight="15dip"
+            android:minHeight="15dip"
+            android:progressDrawable="@drawable/po_seekbar"
+            android:thumb="@drawable/seekbar_thumb"
+            app:layout_constraintStart_toEndOf="@+id/title4_jb_control"
+            app:layout_constraintTop_toBottomOf="@+id/yuanliao2_jd_control" />
+
+        <TextView
+            android:id="@+id/yuanliao4_data_control"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:text="25"
+            app:layout_constraintStart_toEndOf="@+id/yuanliao4_jd_control"
+            app:layout_constraintTop_toBottomOf="@+id/yuanliao2_jd_control" />
+
+        <TextView
+            android:id="@+id/title1_jb_control"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"
+            android:text="KH2PO4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <SeekBar
+            android:id="@+id/yuanliao1_jd_control"
+            android:layout_width="240dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:focusable="true"
+            android:max="10"
+            android:maxHeight="15dip"
+            android:minHeight="20dip"
+            android:progress="0"
+            android:progressDrawable="@drawable/po_seekbar"
+            android:thumb="@drawable/seekbar_thumb"
+            app:layout_constraintStart_toEndOf="@+id/title1_jb_control"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <TextView
+            android:id="@+id/yuanliao1_data_control"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:text="25"
+            app:layout_constraintStart_toEndOf="@+id/yuanliao1_jd_control"
+            app:layout_constraintTop_toTopOf="@+id/yuanliao1_jd_control" />
+
+        <TextView
+            android:id="@+id/title2_jb_control"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:text="Ca(NO3)2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/yuanliao3_jd_control" />
+
+        <SeekBar
+            android:id="@+id/yuanliao3_jd_control"
+            android:layout_width="240dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:focusable="true"
+            android:max="10"
+            android:maxHeight="15dip"
+            android:minHeight="15dip"
+            android:progress="0"
+            android:progressDrawable="@drawable/po_seekbar"
+            android:thumb="@drawable/seekbar_thumb"
+            app:layout_constraintStart_toEndOf="@+id/title2_jb_control"
+            app:layout_constraintTop_toBottomOf="@+id/yuanliao1_jd_control" />
+
+        <TextView
+            android:id="@+id/yuanliao3_data_control"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:text="25"
+            app:layout_constraintStart_toEndOf="@+id/yuanliao3_jd_control"
+            app:layout_constraintTop_toTopOf="@+id/yuanliao3_jd_control" />
+
+        <TextView
+            android:id="@+id/title3_jb_control"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:text="KNO3       "
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/yuanliao2_jd_control" />
+
+        <SeekBar
+            android:id="@+id/yuanliao2_jd_control"
+            android:layout_width="240dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="2dp"
+            android:focusable="true"
+            android:max="10"
+            android:maxHeight="15dip"
+            android:minHeight="15dip"
+            android:progress="0"
+            android:progressDrawable="@drawable/po_seekbar"
+            android:thumb="@drawable/seekbar_thumb"
+            app:layout_constraintStart_toEndOf="@+id/title3_jb_control"
+            app:layout_constraintTop_toBottomOf="@+id/yuanliao3_jd_control" />
+
+        <TextView
+            android:id="@+id/yuanliao2_data_control"
+            android:layout_width="41dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:text="25"
+            app:layout_constraintStart_toEndOf="@+id/yuanliao2_jd_control"
+            app:layout_constraintTop_toTopOf="@+id/yuanliao2_jd_control" />
+
+        <Button
+            android:id="@+id/start_yingyangye_btn_Cont"
+            android:layout_width="37dp"
+            android:layout_height="126dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="16dp"
+            android:background="#881e61fa"
+            android:text="开\n启\n营\n养\n液\n配\n比"
+            app:layout_constraintStart_toStartOf="@+id/yuanliao3_data_control"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

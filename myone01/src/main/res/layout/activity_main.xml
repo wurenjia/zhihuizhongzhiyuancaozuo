@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/drawer_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_lg"
+            tools:layout_editor_absoluteY="25dp">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="46dp"
+                android:background="#c53b3bf4"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:layout_constraintBottom_toTopOf="@+id/inGraden_ll_main"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                tools:ignore="MissingConstraints" />
+
+            <LinearLayout
+                android:id="@+id/mMenu_ll_main"
+                android:layout_width="0dp"
+                android:layout_height="57dp"
+                android:background="#70ffffff"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/outGraden_ll_main">
+
+                <Button
+                    android:id="@+id/main_btn_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#6c2f39ff"
+                    android:drawableTop="@drawable/ic_main03"
+                    android:gravity="center"
+                    android:text="主页"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/A_btn_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#00ffffff"
+                    android:drawableTop="@drawable/ic_set"
+                    android:gravity="center"
+                    android:text="A 区"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/B_btn_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#00ffffff"
+                    android:drawableTop="@drawable/ic_set"
+                    android:gravity="center"
+                    android:text="B 区"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/C_btn_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#00ffffff"
+                    android:drawableTop="@drawable/ic_set"
+                    android:gravity="center"
+                    android:text="C 区"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/outGraden_ll_main"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="60dp"
+                android:background="@drawable/shape_btn02"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toTopOf="@+id/mMenu_ll_main"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/inGraden_ll_main">
+
+                <TextView
+                    android:id="@+id/title_outG_ll_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#5380f2"
+                    android:gravity="center"
+                    android:text=" 园 外："
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/light_outG_ll_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:drawableStart="@drawable/ic_light01"
+                    android:gravity="center|left"
+                    android:text=" 光照强度："
+                    android:textColor="@color/dark_bg_text" />
+
+                <TextView
+                    android:id="@+id/airHUmidity_outG_ll_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:drawableStart="@drawable/ic_airmst"
+                    android:gravity="center|left"
+                    android:text=" 空气湿度："
+                    android:textColor="@color/dark_bg_text" />
+
+                <TextView
+                    android:id="@+id/airTemp_outG_ll_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:drawableStart="@drawable/ic_airtemp01"
+                    android:gravity="center|left"
+                    android:text=" 空气温度："
+                    android:textColor="@color/dark_bg_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/inGraden_ll_main"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="22dp"
+                android:background="@drawable/shape_btn02"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toTopOf="@+id/outGraden_ll_main"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+                <TextView
+                    android:id="@+id/title_inG_ll_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#a05380f2"
+                    android:gravity="center"
+                    android:text=" 园 内："
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/light_inG_ll_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:drawableStart="@drawable/ic_light01"
+                    android:gravity="center|left"
+                    android:text=" 光照强度："
+                    android:textColor="@color/dark_bg_text" />
+
+                <TextView
+                    android:id="@+id/airHUmidity_inG_ll_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:drawableStart="@drawable/ic_airmst"
+                    android:gravity="center|left"
+                    android:text=" 空气湿度："
+                    android:textColor="@color/dark_bg_text" />
+
+                <TextView
+                    android:id="@+id/airTemp_inG_ll_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:drawableStart="@drawable/ic_airtemp01"
+                    android:gravity="center|left"
+                    android:text=" 空气温度："
+                    android:textColor="@color/dark_bg_text" />
+            </LinearLayout>
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/menu_ll_main"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/touxiang02">
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/changepsw_tv_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:drawableStart="@drawable/ic_changepsw"
+                android:text="  修改密码" />
+
+            <TextView
+                android:id="@+id/loginAgain_tv_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:drawableStart="@drawable/ic_loginagain01"
+                android:text="  返回登录" />
+
+            <TextView
+                android:id="@+id/about_tv_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:drawableStart="@drawable/ic_about03"
+                android:text="  关于我们" />
+
+            <TextView
+
+                android:id="@+id/setting_tv_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="10dp"
+                android:drawableStart="@drawable/ic_set"
+                android:text="  设备操控台" />
+        </LinearLayout>
+
+
+    </android.support.v4.widget.DrawerLayout>
+
+</android.support.constraint.ConstraintLayout>

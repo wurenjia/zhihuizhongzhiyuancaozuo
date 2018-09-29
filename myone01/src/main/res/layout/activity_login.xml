@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_lg"
+    tools:context=".LoginActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <EditText
+        android:id="@+id/username_et_lg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="215dp"
+        android:hint="@string/loginHintIn1"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/password_et_lg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="@string/loginHintIn2"
+        android:inputType="text|textPassword"
+        android:selectAllOnFocus="false"
+        android:text=""
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username_et_lg" />
+
+    <Button
+        android:id="@+id/login_btn_lg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="#a5415afa"
+        android:text="@string/text_Login_login"
+        android:textColor="@color/login_text"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_et_lg" />
+
+    <Button
+        android:id="@+id/register_btn_lg"
+        style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:background="#66ffffff"
+        android:gravity="center"
+        android:text="@string/text_Login_register"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_btn_lg" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_btn_lg">
+
+        <CheckBox
+            android:id="@+id/remember_cb"
+            style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:focusable="auto"
+            android:shadowColor="@color/bg_btn_01"
+            android:text="@string/text_Login_remember"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="422dp" />
+
+        <Button
+            android:id="@+id/unremember_btn_lg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00415afa"
+            android:text="忘记密码？"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

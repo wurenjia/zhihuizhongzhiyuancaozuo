@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="设备一">
+        <item>设备一</item>
+        <item>上升</item>
+        <item>悬停</item>
+        <item>下降</item>
+    </string-array>
+    <string-array name="设备二">
+        <item>设备二</item>
+        <item>上升</item>
+        <item>悬停</item>
+        <item>下降</item>
+    </string-array>
+    <string-array name="设备三">
+        <item>设备三</item>
+        <item>上升</item>
+        <item>悬停</item>
+        <item>下降</item>
+    </string-array>
+
+</resources>

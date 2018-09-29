@@ -1,0 +1,63 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_lg"
+    tools:layout_editor_absoluteY="25dp">
+
+    <LinearLayout
+        android:id="@+id/menu_ll_main"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/touxiang02">
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/changepsw_tv_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/ic_changepsw"
+            android:text="  修改密码" />
+
+        <TextView
+            android:id="@+id/loginAgain_tv_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/ic_loginagain01"
+            android:text="  返回登录" />
+
+        <TextView
+            android:id="@+id/about_tv_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/ic_about03"
+            android:text="  关于我们" />
+
+        <TextView
+
+            android:id="@+id/setting_tv_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:drawableStart="@drawable/ic_set"
+            android:text="  设备操控台" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

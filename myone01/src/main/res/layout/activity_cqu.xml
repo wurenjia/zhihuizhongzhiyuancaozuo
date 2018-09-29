@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_lg"
+    tools:context="com.example.ABCqu.CquActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <LinearLayout
+        android:id="@+id/mMenu_ll_Aqu"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:background="#70ffffff"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updown_tl_Bqu">
+
+        <Button
+            android:id="@+id/main_btn_Cqu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#00ffffff"
+            android:drawableTop="@drawable/ic_main03"
+            android:gravity="center"
+            android:text="主页"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/A_btn_Cqu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="#00ffffff"
+            android:drawableTop="@drawable/ic_set"
+            android:gravity="center"
+            android:text="A 区"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/B_btn_Cqu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#00ffffff"
+            android:drawableTop="@drawable/ic_set"
+            android:gravity="center"
+            android:text="B 区"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/C_btn_Cqu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#6c2f39ff"
+            android:drawableTop="@drawable/ic_set"
+            android:gravity="center"
+            android:text="C 区"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:background="#791d14ef"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/fragment_fl_Bqu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/light_title_tv_Bqu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#00ffffff"
+            android:drawableTop="@drawable/ic_light01"
+            android:gravity="center"
+            android:text="光照强度"
+            android:textColor="@color/dark_bg_text"
+            android:textSize="12sp"
+            tools:layout_editor_absoluteX="53dp"
+            tools:layout_editor_absoluteY="176dp" />
+
+        <Button
+            android:id="@+id/soilMst_title_tv_Bqu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#00ffffff"
+            android:drawableTop="@drawable/ic_soilmst01"
+            android:gravity="center"
+            android:text="土壤湿度"
+            android:textColor="@color/dark_bg_text"
+            android:textSize="12sp"
+            tools:layout_editor_absoluteX="109dp"
+            tools:layout_editor_absoluteY="176dp" />
+
+        <Button
+            android:id="@+id/soilTemp_title_tv_Bqu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#00ffffff"
+            android:drawableTop="@drawable/ic_soiltemp01"
+            android:gravity="center"
+            android:text="土壤温度"
+            android:textColor="@color/dark_bg_text"
+            android:textSize="12sp"
+            tools:layout_editor_absoluteX="164dp"
+            tools:layout_editor_absoluteY="176dp" />
+
+        <Button
+            android:id="@+id/airMst_title_tv_Bqu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#00ffffff"
+            android:drawableTop="@drawable/ic_airmst"
+            android:gravity="center"
+            android:text="空气湿度"
+            android:textColor="@color/dark_bg_text"
+            android:textSize="12sp"
+            tools:layout_editor_absoluteX="221dp"
+            tools:layout_editor_absoluteY="176dp" />
+
+        <Button
+            android:id="@+id/airTemp_title_tv_Bqu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#00ffffff"
+            android:drawableTop="@drawable/ic_airtemp01"
+            android:gravity="center"
+            android:text="空气温度"
+            android:textColor="@color/dark_bg_text"
+            android:textSize="12sp"
+            tools:layout_editor_absoluteX="277dp"
+            tools:layout_editor_absoluteY="176dp" />
+    </LinearLayout>
+
+
+    <TableLayout
+        android:id="@+id/updown_tl_Bqu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/shape_btn02"
+        app:layout_constraintBottom_toTopOf="@+id/mMenu_ll_Aqu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_fl_Bqu">
+
+        <TableRow
+            android:id="@+id/equiment1_Bqu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/equiment1_tv_Bqu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设备一:" />
+
+            <Button
+                android:id="@+id/up_eqm1_btn_Bqu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上升" />
+
+            <Button
+                android:id="@+id/stop_eqm1_btn_Bqu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="悬停" />
+
+            <Button
+                android:id="@+id/down_eqm1_btn_Bqu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="下降" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/equiment2_Bqu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/equiment2_tv_Bqu"
+                android:layout_width="84dp"
+                android:layout_height="wrap_content"
+                android:text="设备二:" />
+
+            <Button
+                android:id="@+id/up_eqm2_btn_Bqu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上升" />
+
+            <Button
+                android:id="@+id/stop_eqm2_btn_Bqu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="悬停" />
+
+            <Button
+                android:id="@+id/down_eqm2_btn_Bqu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下降" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/equiment3_Bqu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/equiment3_tv_Bqu"
+                android:layout_width="84dp"
+                android:layout_height="wrap_content"
+                android:text="设备三:" />
+
+            <Button
+                android:id="@+id/up_eqm3_btn_Bqu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上升" />
+
+            <Button
+                android:id="@+id/stop_eqm3_btn_Bqu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="悬停" />
+
+            <Button
+                android:id="@+id/down_eqm3_btn_Bqu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下降" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_fl_Bqu"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/airtemp"
+        app:layout_constraintBottom_toTopOf="@+id/updown_tl_Bqu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>
